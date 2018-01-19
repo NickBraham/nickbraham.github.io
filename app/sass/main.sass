@@ -1,0 +1,211 @@
+@import "mixins"
+
+body
+	display: grid
+a
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: inherit
+a:hover
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: inherit
+a:focus
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: inherit
+a:visited
+	text-decoration: none
+	outline: none
+	outline-style: none
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+input, textarea 
+	text-decoration: none
+	outline: none
+	outline-style: none
+	border: none
+button
+	background-color: transparent
+	outline-style: none
+	border: none
+button:hover
+	background-color: transparent
+	outline-style: none
+button:focus
+	background-color: transparent
+	outline-style: none
+section,footer
+	display: inline-block
+	width: 100%
+	padding: 25px 0px
+footer
+	padding: 65px 0px
+.parallax-container
+	height: 320px
+	background: transparent
+.no-gutter [class*='col-']
+	padding-right: 0
+	padding-left: 0
+.left
+	float: left
+.right
+	float: right
+.row-flex
+	display: flex
+	flex-flow: row wrap
+a.sign
+	display: inline-block
+	margin-top: 20px
+	text-transform: uppercase
+	color: $white
+	border: 3px solid $grey
+	font-size: 24px
+	padding: 15px 40px
+	+monreg
+	&:hover
+		border: 3px solid $white
+		+flow
+
+p
+	font-size: 16px
+	color: $grey
+	+openlight
+h3
+	font-size: 18px
+	text-transform: uppercase
+	color: #000
+	margin: 40px 0
+	+monbold
+h4
+	font-size: 14px
+	text-transform: uppercase
+	color: #000
+	+monreg
+h5
+	font-size: 36px
+	text-transform: uppercase
+	+openlight
+	color: #404040
+	margin: 15px 0
+header
+	height: 100vh
+	display: block
+	width: 100%
+	background-image: url("../img/top-bg.jpg")
+	background-size: cover
+	text-align: center
+	ul,li
+		display: inline-block
+		list-style: none
+	li
+		padding: 20px 33px
+		text-transform: uppercase
+	h3
+		color: #f7b519
+		font-size: 28px
+		text-transform: none
+	h2
+		color: #161616
+		font-size: 40px
+	span
+		color: #f7b519
+		font-size: 44px
+
+#about
+	background-color: #f4f4f4
+	.follow
+		+more-button
+		background-color: #eeb013
+		margin: 10px 0px
+		border: 1px solid transparent
+		&:hover
+			background-color: transparent
+			color: #eeb013
+			border: 1px solid #eeb013
+			+flow
+	.review
+		h4
+			text-transform: uppercase
+			color: #f7b519
+			font-size: 24px
+		p
+			text-align: left
+	.overlay
+		display: inline-block
+		position: relative
+		overflow: hidden
+
+		span
+			top: -100%
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			background-color: #111
+			opacity: .9
+			transition: all .5s ease-in
+		&:hover span
+			top: 0
+		p
+			color: $white
+
+#testimonials
+	background-color: #f4f4f4
+	.descr
+		text-align: left
+		p
+			font-size: 22px
+			margin-top: 75px
+#blog
+	.stats
+		text-align: center
+		border-bottom: 1px solid #e5e5e5
+	.content
+		padding-top: 60px 		
+		display: inline-block
+		h4
+			font-size: 14px
+			color: #808080
+			text-transform: uppercase
+		.ticket
+			&:hover
+				+mid-shadow
+				+flow
+		.cvadro
+			background-color: #161616
+			display: inline-block
+			position: absolute
+			top: 0
+			left: 15px
+			height: 65px
+			width: 65px
+			z-index: 20
+			text-align: center
+			p 
+				color: #fff
+				text-transform: uppercase
+				margin: 0
+				font-size: 17px
+				span
+					font-size: 25px
+footer
+	background-color: #1c1c1c
+	color: #808080
+	h6
+		color: #fffefe
+		font-size: 20px
+		text-transform: uppercase
+	p
+		color: #acacac
+		font-size: 16px
+	ul,li
+		list-style: none
+		color: #acacac
+		font-size: 16px
+
