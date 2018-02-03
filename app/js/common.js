@@ -16,8 +16,15 @@ $(document).ready(function() {
 			}, 1000);
 		});
 		return false;
-
 	});
+
+	$('.popup-modal').magnificPopup({
+		type:'inline',
+		midClick: true,
+		removalDelay: 350,
+		mainClass: 'mfp-fade'
+	});
+
 
 	$(".top_mnu ul a,.scroll").mPageScroll2id();
 

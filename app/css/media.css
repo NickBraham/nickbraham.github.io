@@ -1,22 +1,4 @@
-/*==========  Desktop First Method  ==========*/
 
-:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-
-:focus::-moz-placeholder {
-  color: transparent;
-}
-
-:focus:-moz-placeholder {
-  color: transparent;
-}
-
-:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
-/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
 }
@@ -141,6 +123,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	section {
+		padding: 0 10px;
+	}
 	#contacts .col-xs-8 {
 		margin-top: 20px;
 	}
